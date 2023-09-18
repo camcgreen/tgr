@@ -11,7 +11,9 @@ const Header = () => {
             />
             <ul className='header__links'>
                 <li>
-                    <Link href='/#home'>Home</Link>
+                    <Link href='/#home'>
+                        <span style={{ fontWeight: 700 }}>Home</span>
+                    </Link>
                 </li>
                 <li>
                     <Link href='/#about'>About</Link>
