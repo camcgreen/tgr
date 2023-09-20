@@ -23,13 +23,17 @@ const Landing = () => {
                     <br className='break' />
                     <span className='space'> </span>and create a life you love.
                 </h1>
-                <h2 className='landing__text__subtitle'>
+                <h4 className='landing__text__subtitle'>
                     Life coaching guides you through a transformational journey
                     of
                     <br className='break' />
                     <span className='space'> </span>discovery, helping you
                     identify your unique gifts and talents.
-                </h2>
+                </h4>
+            </div>
+            <div className='landing__scroll'>
+                <div className='landing__scroll__line' />
+                <div className='landing__scroll__circle' />
             </div>
         </section>
     );
