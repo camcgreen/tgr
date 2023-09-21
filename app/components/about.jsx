@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='card about'>
+        <div className='card about' id='about'>
             <div className='about__left'>
                 <h2 className='about__left__title'>How coaching works.</h2>
                 <p className='about__left__description'>
@@ -12,6 +12,7 @@ const About = () => {
                 <div className='about__left__book'>
                     <p>Book your first free session now.</p>
                     <img
+                        style={{ display: 'inline' }}
                         src='/images/arrow-right.svg'
                         alt='Book your first free session now'
                     />
