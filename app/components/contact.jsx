@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <div className='card contact' id='contact'>
             <h2>
-                Let's get the
+                Let&apos;s get the
                 <br />
                 conversation started.
             </h2>

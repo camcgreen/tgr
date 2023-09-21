@@ -346,6 +346,29 @@ a {
 .services {
     background-color: #1D2420;
     color: white;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        max-width: 600px;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        p {
+            margin-bottom: 40px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    img {
+        width: 785px;
+        border-radius: $borderRadiusLarge;
+    }
 }
 
 .contact {
