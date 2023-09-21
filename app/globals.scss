@@ -346,28 +346,37 @@ a {
 .services {
     background-color: #1D2420;
     color: white;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 40px;
+    // grid-column-gap: 160px;
+    grid-column-gap: 10%;
 
-    &__left {
-        max-width: 600px;
+    h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 
-        h2 {
-            margin-bottom: 40px;
-        }
+    p {
+        grid-column-start: 1;
+        grid-column-end: 2;
 
-        p {
-            margin-bottom: 40px;
-
-            &:last-of-type {
-                margin-bottom: 0;
-            }
+        &:last-of-type {
+            margin-bottom: 0;
         }
     }
 
     img {
-        width: 785px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        width: 100%;
+        height: 100%;
+        align-self: center;
         border-radius: $borderRadiusLarge;
+        object-fit: cover;
     }
 }
 
@@ -420,14 +429,20 @@ a {
     }
 
     .about {
-        // flex-direction: column;
+
         &__left {
-            // margin-bottom: 80px;
             max-width: 40%;
         }
 
         &__right {
             max-width: 50%;
+        }
+    }
+
+    .services {
+        img {
+            width: 100%;
+            height: 80%;
         }
     }
 }
@@ -471,7 +486,21 @@ a {
         }
 
         &__left {
-            margin-bottom: 80px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+
+        img {
+            border-radius: $borderRadiusSmall;
+            width: 100%;
+            height: 100%;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
     }
 }
@@ -512,6 +541,22 @@ a {
         display: none;
     }
 
+    .about {
+
+        &__right {
+            &__row {
+                
+                img {
+                    width: 24px;
+
+                    &:first-of-type {
+                        transform: translateY(7px);
+                    }
+                }
+            }
+        }
+    }
+
     .card, .footer {
         padding: 80px 40px;
         padding-bottom: 120px;
@@ -524,10 +569,13 @@ a {
     .about {
 
         &__left {
+
             &__book {
+
                 p {
                     margin-right: 12px;
                 }
+
                 img {
                     width: 18px;
                 }
