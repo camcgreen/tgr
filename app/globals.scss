@@ -471,6 +471,7 @@ a {
 
             &__textarea {
                 min-height: 100px;
+                transition: height 0.3s ease-in-out;
             }
 
             &__line {
@@ -521,6 +522,7 @@ a {
 
 .submit {
     max-width: 200px;
+    font-size: 1.5rem;
 }
 
 .footer {
@@ -533,6 +535,7 @@ a {
     p {
         cursor: pointer;
         margin-bottom: 20px;
+        font-size: 1rem;
 
         &:first-of-type {
             cursor: auto;
@@ -734,6 +737,10 @@ a {
                 }
             }
         }
+    }
+
+    .submit {
+        font-size: 0.9rem;
     }
 
     .card, .footer {
