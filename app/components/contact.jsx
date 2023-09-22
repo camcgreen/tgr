@@ -31,8 +31,10 @@ const Contact = () => {
             </h2>
             <p>
                 Want to achieve real results? Fill in the form
-                <br />
-                below to schedule your first <span>free</span> session.
+                <br className='break' />
+                <span className='space'> </span>
+                below to schedule your first{' '}
+                <span className='underline'>free</span> session.
             </p>
             <form onSubmit={(e) => handleSubmit(e)} className='contact__form'>
                 <div className='contact__form__item'>
@@ -40,7 +42,7 @@ const Contact = () => {
                         type='text'
                         placeholder='Name'
                         className='contact__form__item__input'
-                        onClick={(e) => addWobble(e)}
+                        onFocus={(e) => addWobble(e)}
                     />
                     <div className='contact__form__item__line' />
                 </div>
@@ -49,7 +51,7 @@ const Contact = () => {
                         type='email'
                         placeholder='Email'
                         className='contact__form__item__input'
-                        onClick={(e) => addWobble(e)}
+                        onFocus={(e) => addWobble(e)}
                     />
                     <div className='contact__form__item__line' />
                 </div>
@@ -58,7 +60,7 @@ const Contact = () => {
                         type='phone'
                         placeholder='Phone'
                         className='contact__form__item__input'
-                        onClick={(e) => addWobble(e)}
+                        onFocus={(e) => addWobble(e)}
                     />
                     <div className='contact__form__item__line' />
                 </div>
@@ -68,7 +70,7 @@ const Contact = () => {
                         placeholder='Message'
                         // className='contact__form__item__input contact__form__item__textarea'
                         className='contact__form__item__textarea'
-                        onClick={(e) => addWobble(e)}
+                        onFocus={(e) => addWobble(e)}
                         onChange={(e) => dynamicHeight(e)}
                     />
                     <div className='contact__form__item__line' />

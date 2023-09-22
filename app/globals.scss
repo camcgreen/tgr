@@ -126,6 +126,10 @@ a {
     display: none;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .loading {
     pointer-events: none;
     position: fixed;
@@ -396,15 +400,12 @@ a {
 
     p {
         margin-bottom: 40px;
-
-        span {
-            text-decoration: underline;
-        }
     }
 
     &__form {
         display: flex;
         flex-direction: column;
+        // max-width: 1000px;
 
         &__item {
             cursor: text;
@@ -610,6 +611,19 @@ a {
             grid-row-end: 3;
         }
     }
+
+    .contact {
+
+        &__form {
+
+            &__item {
+
+                &__input {
+                    // font-size: 1rem;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $mediaPhone) {
@@ -651,6 +665,7 @@ a {
     .about {
 
         &__right {
+
             &__row {
                 
                 img {
@@ -659,6 +674,26 @@ a {
                     &:first-of-type {
                         transform: translateY(7px);
                     }
+                }
+            }
+        }
+    }
+
+    .contact {
+
+        &__form {
+
+            &__item {
+
+                &__input {
+                    font-size: 0.9rem;
+                }
+            }
+
+            &__textareaitem {
+
+                textarea {
+                    font-size: 0.9rem;
                 }
             }
         }
