@@ -33,8 +33,8 @@ const Contact = () => {
                 Want to achieve real results? Fill in the form
                 <br className='break' />
                 <span className='space'> </span>
-                below to schedule your first{' '}
-                <span className='underline'>free</span> session.
+                below to schedule your first <span className=''>free</span>{' '}
+                session.
             </p>
             <form onSubmit={(e) => handleSubmit(e)} className='contact__form'>
                 <div className='contact__form__item'>

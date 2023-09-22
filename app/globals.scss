@@ -10,15 +10,15 @@ $borderRadiusSmall: 6px;
 
 @keyframes slideDown {
     0% {
-        transform: translate(-50%, 0);
+        transform: translate(-50%, -4px);
         opacity: 1;
     }
     90% {
-        transform: translate(-50%, 28px);
+        transform: translate(-50%, 18px);
         opacity: 0;
     }
     100% {
-        transform: translate(-50%, 0);
+        transform: translate(-50%, -4px);
         opacity: 0;
     }
 }
@@ -40,7 +40,7 @@ $borderRadiusSmall: 6px;
 }
 
 html {
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 html,
@@ -63,8 +63,8 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 700;
     letter-spacing: -0.025em;
     line-height: 100%;
 }
@@ -128,6 +128,10 @@ a {
 
 .underline {
     text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .loading {
@@ -242,13 +246,14 @@ a {
     }
 
     &__scroll {
+        cursor: pointer;
         position: absolute;
         left: 50%;
         top: 80%;
         transform: translate(-50%, -50%);
         width: 35px;
-        height: 75px;
-        background-color: white;
+        height: 65px;
+        border: solid white 1px;
         border-radius: $borderRadiusLarge;
         display: flex;
         justify-content: center;
@@ -268,9 +273,9 @@ a {
             width: 7px;
             aspect-ratio: 1 / 1;
             border-radius: 50%;
-            background-color: black;
+            background-color: white;
             animation-name: slideDown;
-            animation-duration: 1.5s;
+            animation-duration: 2s;
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
         }
@@ -281,7 +286,9 @@ a {
     position: relative;
     width: 100%;
     padding: 160px 80px;
+    // padding: 320px 160px;
     padding-bottom: 200px;
+    // padding-bottom: 360px;
     margin-top: -$borderRadiusLarge;
     border-top-right-radius: $borderRadiusLarge;
     border-top-left-radius: $borderRadiusLarge;
@@ -378,7 +385,23 @@ a {
         }
     }
 
-    img {
+    // img {
+    //     grid-column-start: 2;
+    //     grid-column-end: 3;
+    //     grid-row-start: 1;
+    //     grid-row-end: 4;
+    //     width: 100%;
+    //     height: 100%;
+    //     align-self: center;
+    //     border-radius: $borderRadiusLarge;
+    //     object-fit: cover;
+    // }
+
+    &__img-container {
+        position: relative;
+        overflow: hidden;
+        // height: 80%;
+
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -387,6 +410,14 @@ a {
         height: 100%;
         align-self: center;
         border-radius: $borderRadiusLarge;
+        object-fit: cover;
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        // height: 80%;
+        height: 120%;
         object-fit: cover;
     }
 }
@@ -399,7 +430,7 @@ a {
     }
 
     p {
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
 
     &__form {
@@ -425,7 +456,7 @@ a {
                 background: none;
                 outline: none;
                 width: 100%;
-                font-weight: 100;
+                font-weight: 400;
                 height: 50px;
                 padding-bottom: 20px;
 
@@ -473,7 +504,7 @@ a {
                 border: 0;
                 background: none;
                 outline: none;
-                font-weight: 100;
+                font-weight: 400;
                 margin-bottom: -75px;
 
                 &:hover + .contact__form__item__line { 
@@ -548,8 +579,8 @@ a {
     }
 
     .services {
-        img {
-            width: 100%;
+
+        &__img-container {
             height: 80%;
         }
     }
@@ -601,10 +632,10 @@ a {
     .services {
         grid-template-columns: 1fr;
 
-        img {
+        &__img-container {
             border-radius: $borderRadiusSmall;
             width: 100%;
-            height: 100%;
+            height: 400px;
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 2;
@@ -676,6 +707,12 @@ a {
                     }
                 }
             }
+        }
+    }
+
+    .services {
+        &__img-container {
+            height: 200px;
         }
     }
 

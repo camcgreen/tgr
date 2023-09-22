@@ -32,7 +32,7 @@ const Landing = () => {
                 </h4>
             </div>
             <div className='landing__scroll'>
-                <div className='landing__scroll__line' />
+                {/* <div className='landing__scroll__line' /> */}
                 <div className='landing__scroll__circle' />
             </div>
         </section>

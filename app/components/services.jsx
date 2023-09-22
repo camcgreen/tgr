@@ -8,7 +8,14 @@ const Services = () => {
                 <br />
                 with you.
             </h2>
-            <img src='/images/chair.jpg' alt='In the room with you.' />
+            <div className='services__img-container'>
+                <img
+                    src='/images/chair.jpg'
+                    alt='In the room with you.'
+                    data-speed='0.95'
+                />
+            </div>
+            {/* <img src='/images/chair.jpg' alt='In the room with you.' /> */}
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
                 massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
