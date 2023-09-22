@@ -16,6 +16,12 @@ const Contact = () => {
             line.classList.remove('contact__form__item__line__animated');
         }, 1100);
     };
+    const dynamicHeight = (e) => {
+        // console.log(e.target);
+        const target = e.target;
+        target.style.height = '5px';
+        target.style.height = target.scrollHeight + 'px';
+    };
     return (
         <div className='card contact' id='contact'>
             <h2>
@@ -56,15 +62,18 @@ const Contact = () => {
                     />
                     <div className='contact__form__item__line' />
                 </div>
-                <div className='contact__form__item'>
+                <div className='contact__form__item contact__form__textareaitem'>
                     <textarea
                         type='text'
                         placeholder='Message'
-                        className='contact__form__item__input contact__form__item__textarea'
+                        // className='contact__form__item__input contact__form__item__textarea'
+                        className='contact__form__item__textarea'
                         onClick={(e) => addWobble(e)}
+                        onChange={(e) => dynamicHeight(e)}
                     />
                     <div className='contact__form__item__line' />
                 </div>
+                <input type='submit' value='Send' className='submit button' />
             </form>
         </div>
     );

@@ -458,7 +458,37 @@ a {
                 }
             }
         }
+
+        &__textareaitem {
+            height: auto !important;
+            overflow: hidden;
+
+            textarea {
+                resize: none;
+                height: 100px;
+                overflow: hidden;
+                overflow-wrap: break-word;
+                font-size: 1.5rem;
+                border: 0;
+                background: none;
+                outline: none;
+                font-weight: 100;
+                margin-bottom: -75px;
+
+                &:hover + .contact__form__item__line { 
+                    opacity: 1 !important;
+                }
+
+                &:focus + .contact__form__item__line { 
+                    opacity: 1 !important;
+                }
+            }
+        }
     }
+}
+
+.submit {
+    max-width: 200px;
 }
 
 .footer {
