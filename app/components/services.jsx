@@ -12,7 +12,7 @@ const Services = () => {
                 <img
                     src='/images/chair.jpg'
                     alt='In the room with you.'
-                    data-speed='0.95'
+                    data-speed='0.7'
                 />
             </div>
             {/* <img src='/images/chair.jpg' alt='In the room with you.' /> */}

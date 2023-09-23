@@ -30,7 +30,6 @@ export default function Home() {
             //     scrollY = self.scrollTop();
             // },
         });
-        // smoother.effects('img', { speed: 'auto' });
     }, []);
     return (
         <div className='wrapper'>
