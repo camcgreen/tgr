@@ -47,10 +47,10 @@ const Services = () => {
       </p>
       <p>
         Traditionally the Green Room is where performers prepare themself to
-        take the stage. I want to be in the room with you to create the space to
-        help you make your discoveries, to unlock your potential and help
-        prepare you to make your entry onto your next stage. I see this happen
-        almost every day, it will happen for you.
+        take the stage. I want to be in the room with you (virtually) to create
+        the space to help you make your discoveries, to unlock your potential
+        and help prepare you to make your entry onto your next stage. I see this
+        happen almost every day, it will happen for you.
       </p>
     </div>
   )
