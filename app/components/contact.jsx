@@ -48,7 +48,7 @@ const Contact = () => {
         <input
           type='hidden'
           name='next'
-          value='https://tgr-three.vercel.app/thanks'
+          value='https://www.thegreenroom.expert/thanks'
         />
         <div className='contact__form__item'>
           <input
