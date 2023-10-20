@@ -40,7 +40,7 @@ const Contact = () => {
         action='https://formsubmit.co/greenroomxp@gmail.com'
         method='POST'
       >
-        <input type='hidden' name='_captcha' value='false'></input>
+        {/* <input type='hidden' name='_captcha' value='false'></input> */}
         <input
           type='hidden'
           name='_subject'
