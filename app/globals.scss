@@ -177,10 +177,23 @@ a {
     z-index: 2;
     background-color: white;
 
+    * {
+      width: 33%;
+    }
+    &__logo-container {
+      padding-right: 250px;
+      height: 41px;
+    }
+
     &__logo {
-        width: 48px;
-        aspect-ratio: 1 / 1;
-        margin-right: 110px;
+      width: 240px;
+      // width: calc(100% - 250px);
+      // padding-right: 250px;
+      // width: 280px;
+      // width: 100px;
+        // width: 48px;
+        // aspect-ratio: 1 / 1;
+        // margin-right: 140px;
     }
 
     &__links {
@@ -188,6 +201,7 @@ a {
         display: flex;
         
         li {
+          text-align: center;
             cursor: pointer;
             margin-right: 40px;
         }
@@ -201,6 +215,15 @@ a {
         }
         
     }
+
+    &__btn-container {
+      padding-left: 300px;
+    }
+
+    button {
+      width: 100%;
+      // width: 200px;
+    }
 }
 
 .landing {
@@ -210,7 +233,7 @@ a {
     margin-top: $navHeight;
     border-top-right-radius: $borderRadiusLarge;
     border-top-left-radius: $borderRadiusLarge;
-    background: lightblue;
+    background: rgba(0, 0, 0, 0.25);
     overflow: hidden;
     // margin-bottom: 1000px;
 
@@ -558,6 +581,21 @@ a {
         font-size: 1.5rem;
     }
 
+
+    .header__btn-container {
+      // display: none;
+      // opacity: 0;
+      // pointer-events: none;
+      padding-left: 200px;
+      button {
+        padding: 5px 5px;
+      }
+    }
+
+    // .header * {
+    //   width: 100%;
+    // }
+
     .about {
 
         &__left {
@@ -646,15 +684,36 @@ a {
     .header {
         width: 100%;
         left: 0;
+        justify-content: center;
+    }
+
+    .header__logo-container {
+      width: 100%;
+      padding-right: 0;
+      display: flex;
+      justify-content: center;
     }
 
     .header__logo {
         margin-right: 0;
     }
 
+    .header__btn-container {
+      display: none;
+      padding-left: 0;
+    }
+
     .header__links {
         display: none;
     }
+
+  .header__logo {
+      margin-right: 0;
+  }
+
+  .header button {
+      display: none;
+  }
 
     .about {
         flex-direction: column;

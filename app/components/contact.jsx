@@ -29,7 +29,7 @@ const Contact = () => {
         conversation started.
       </h2>
       <p>
-        Want to achieve real results? Fill in the form
+        Are you ready to unlock real results? Fill in the form
         <br className='break' />
         <span className='space'> </span>
         below to schedule your first <span className=''>free</span> session.
@@ -72,7 +72,7 @@ const Contact = () => {
           />
           <div className='contact__form__item__line' />
         </div>
-        <div className='contact__form__item'>
+        {/* <div className='contact__form__item'>
           <input
             type='phone'
             name='phone'
@@ -81,7 +81,7 @@ const Contact = () => {
             onFocus={(e) => addWobble(e)}
           />
           <div className='contact__form__item__line' />
-        </div>
+        </div> */}
         <div className='contact__form__item contact__form__textareaitem'>
           <textarea
             type='text'

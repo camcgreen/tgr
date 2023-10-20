@@ -3,11 +3,13 @@ import React from 'react'
 const Header = ({ smoother }) => {
   return (
     <header className='header'>
-      <img
-        src='/images/logo.svg'
-        alt='The Green Room Coaching logo'
-        className='header__logo'
-      />
+      <div className='header__logo-container'>
+        <img
+          src='/images/logo-full.svg'
+          alt='The Green Room Coaching logo'
+          className='header__logo'
+        />
+      </div>
       <ul className='header__links'>
         <li style={{ fontWeight: 700 }}>Home</li>
         <li onClick={() => smoother && smoother.scrollTo('#about', true)}>
@@ -20,12 +22,14 @@ const Header = ({ smoother }) => {
           Contact
         </li>
       </ul>
-      <button
-        className='button'
-        onClick={() => smoother && smoother.scrollTo('#contact', true)}
-      >
-        Book Session
-      </button>
+      <div className='header__btn-container'>
+        <button
+          className='button'
+          onClick={() => smoother && smoother.scrollTo('#contact', true)}
+        >
+          Book Session
+        </button>
+      </div>
     </header>
   )
 }

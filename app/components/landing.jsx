@@ -26,20 +26,6 @@ const Landing = ({ smoother }) => {
           <span className='space'> </span>discovery, helping you identify your
           unique gifts and talents.
         </h4>
-        {/* <h1>
-          Unlock your inner strength
-          <br className='break' />
-          <span className='space'> </span>and transform your life into the life
-          you seek.
-        </h1> */}
-        {/* <h4 className='landing__text__subtitle'>
-          Life and Performance coaching puts you through a transformative
-          journey that
-          <br className='break' />
-          <span className='space'> </span>unlocks your inner resources and puts
-          you in touch with your true identity and your unique gifts and
-          talents.
-        </h4> */}
       </div>
       <div
         className='landing__scroll'

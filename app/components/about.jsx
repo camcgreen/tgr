@@ -18,17 +18,6 @@ const About = ({ smoother }) => {
           confidence in knowing that you have an answer to any and every
           challenge that life can ever present you with.
         </p>
-        <p className='about__left__description'>
-          Coaching facilitates and unlocks all the mental preparation you have
-          unconsciously already undertaken. Its power for personal
-          transformation can be therapeutic, although itself it is not therapy
-          and shouldn’t be confused with therapy.
-        </p>
-        <p className='about__left__description'>
-          At the Green Room Coaching Practice we undertake to help you unlock
-          your transformative power the moment you undertake to follow the path
-          you unlock within yourself.”
-        </p>
         <div
           className='about__left__book'
           onClick={() => smoother && smoother.scrollTo('#contact', true)}
@@ -52,8 +41,10 @@ const About = ({ smoother }) => {
           <div className='about__right__column'>
             <h3>Proven to help you see changes faster.</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna.
+              Coaching facilitates and unlocks all the mental preparation you
+              have unconsciously already undertaken. Its power for personal
+              transformation can be therapeutic, although itself it is not
+              therapy and shouldn’t be confused with therapy.
             </p>
           </div>
         </div>
@@ -62,8 +53,11 @@ const About = ({ smoother }) => {
           <div className='about__right__column'>
             <h3>Complete confidentiality.</h3>
             <p>
-              Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-              mattis ligula consectetur, ultrices mauris.
+              You can feel safe in the knowledge that your information will be
+              treated in complete confidence and held securely. At the Green
+              Room Coaching Practice we undertake to help you unlock your
+              transformative power the moment you undertake to follow the path
+              you unlock within yourself.
             </p>
           </div>
         </div>
