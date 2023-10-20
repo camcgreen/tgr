@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Services = () => {
+  const [isMobile, setIsMobile] = useState(null)
+  useEffect(() => {
+    const mobile = window.innerWidth < 1100
+    setIsMobile(mobile)
+  }, [])
+  useEffect(() => {
+    console.log(isMobile)
+  }, [isMobile])
   return (
     <div className='card services' id='services'>
       <h2>
@@ -12,7 +20,7 @@ const Services = () => {
         <img
           src='/images/chair.jpg'
           alt='In the room with you.'
-          data-speed={window.innerWidth > 1100 ? 0.7 : 1}
+          data-speed={isMobile ? 0 : 0.7}
         />
       </div>
       <p>
