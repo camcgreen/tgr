@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contact = () => {
   const handleSubmit = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
   }
   const addWobble = (e) => {
     const target = e.target
@@ -37,13 +37,18 @@ const Contact = () => {
       <form
         onSubmit={(e) => handleSubmit(e)}
         className='contact__form'
-        action='https://formsubmit.co/c.c.green@outlook.com'
+        action='https://formsubmit.co/greenroomxp@gmail.com'
         method='POST'
       >
         <input
           type='hidden'
           name='_subject'
           value='New contact submission from the website'
+        />
+        <input
+          type='hidden'
+          name='next'
+          value='https://tgr-three.vercel.app/thanks'
         />
         <div className='contact__form__item'>
           <input
@@ -82,7 +87,6 @@ const Contact = () => {
             type='text'
             name='message'
             placeholder='Message'
-            // className='contact__form__item__input contact__form__item__textarea'
             className='contact__form__item__textarea'
             onFocus={(e) => addWobble(e)}
             onChange={(e) => dynamicHeight(e)}

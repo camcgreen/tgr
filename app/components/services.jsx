@@ -6,9 +6,6 @@ const Services = () => {
     const mobile = window.innerWidth < 1100
     setIsMobile(mobile)
   }, [])
-  useEffect(() => {
-    console.log(isMobile)
-  }, [isMobile])
   return (
     <div className='card services' id='services'>
       <h2>
